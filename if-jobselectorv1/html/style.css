@@ -1,0 +1,428 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+body {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+.main-wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 34vw;
+    height: 32vw;
+    background: radial-gradient(45.96% 19.97% at 100% 0%, rgba(255, 0, 0, 0.1) 0%, rgba(255, 0, 0, 0) 100%), radial-gradient(10.88% 25.1% at 100% 72.9%, rgba(243, 79, 177, 0.1) 0%, rgba(243, 79, 177, 0) 100%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , radial-gradient(37.15% 16.14% at 85.04% 100%, rgba(161, 79, 243, 0.1) 0%, rgba(161, 79, 243, 0) 100%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , radial-gradient(41.37% 96.93% at 20.39% 100%, rgba(79, 154, 243, 0.1) 0%, rgba(79, 154, 243, 0) 100%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , radial-gradient(37.15% 43.23% at 100% 100%, rgba(79, 154, 243, 0.1) 0%, rgba(79, 154, 243, 0) 100%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , #181920;
+    border-radius: 0.6vw;
+}
+
+.header {
+    position: absolute;
+    width: 33vw;
+    height: 6vw;
+    left: 3vw;
+    top: 0.5vw;
+}
+
+.title {
+    position: absolute;
+    width: 20vw;
+    color: #F3E34F;
+    text-shadow: 0px -2px 73px rgba(243, 227, 79, 0.5);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+.description {
+    position: absolute;
+    width: 15vw;
+    top: 2.2vw;
+    font-size: 0.6vw;
+    color: rgba(255, 255, 255, 0.25);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.close {
+    position: absolute;
+    top: 1.5vw;
+    left: 28vw;
+    width: 2vw;
+    height: 2vw;
+    line-height: 1.9vw;
+    text-align: center;
+    background: #FF0000;
+    box-shadow: 0px -2px 73px rgba(255, 0, 0, 0.5), inset 0px 0px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.483);
+}
+
+.job-list {
+    position: absolute;
+    left: 2.7vw;
+    top: 6.5vw;
+    width: 35vw;
+    height: 26vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.job-list::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.job-list::-webkit-scrollbar {
+    width: 0px;
+}
+
+.job-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(59, 59, 59);
+}
+
+.job-box {
+    position: relative;
+    float: left;
+    left: -0.5vw;
+    width: 9vw;
+    height: 11.3vw;
+    background: radial-gradient(52.13% 29.24% at 50% 100%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.02);
+    border-radius: 0.5vw;
+    margin-left: 0.65vw;
+    margin-bottom: 1vw
+}
+
+.job-logo {
+    position: absolute;
+    left: 1.3vw;
+    top: 1.3vw;
+    width: 6vw;
+	transition: all 0.5s ease-in-out;
+}
+
+.job-logo:hover {
+	transform: scale(1.3);
+	filter: drop-shadow(10px 10px 2px #ccc);
+}
+
+.job-name {
+    position: absolute;
+    font-size: 0.9vw;
+    width: 9vw;
+    top: 9.1vw;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+    font-size: 0.8vw;
+    color: #fff;
+}
+
+.border {
+    position: absolute;
+    left: 0vw;
+    width: 9vw;
+    height: 9vw;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    border-radius: 0.5vw;
+}
+
+.job-wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 34vw;
+    height: 32.3vw;
+    background: radial-gradient(45.96% 19.97% at 100% 0%, rgba(255, 0, 0, 0.1) 0%, rgba(255, 0, 0, 0) 100%), radial-gradient(10.88% 25.1% at 100% 72.9%, rgba(243, 79, 177, 0.1) 0%, rgba(243, 79, 177, 0) 100%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , radial-gradient(37.15% 16.14% at 85.04% 100%, rgba(161, 79, 243, 0.1) 0%, rgba(161, 79, 243, 0) 100%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , radial-gradient(41.37% 96.93% at 20.39% 100%, rgba(79, 154, 243, 0.1) 0%, rgba(79, 154, 243, 0) 100%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , radial-gradient(37.15% 43.23% at 100% 100%, rgba(79, 154, 243, 0.1) 0%, rgba(79, 154, 243, 0) 100%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , #181920;
+    border-radius: 0.6vw;
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: rgb(59, 59, 59);
+}
+
+.job-box-2 {
+    position: relative;
+    float: left;
+    left: -0.5vw;
+    width: 9vw;
+    height: 11.3vw;
+    background: radial-gradient(52.13% 29.24% at 50% 100%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.02);
+    border-radius: 0.5vw;
+    margin-left: 0.65vw;
+    margin-bottom: 1vw;
+    top: 8vw;
+    left: 3vw;
+    scale: 1.1;
+}
+
+.job-name-2 {
+    position: absolute;
+    font-size: 0.9vw;
+    width: 9vw;
+    top: 9vw;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+    font-size: 0.8vw;
+    color: #fff;
+}
+
+.job-name-1 {
+    position: absolute;
+    font-size: 0.9vw;
+    width: 11vw;
+    top: 6.29vw;
+    left: 11vw;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.2vw;
+    color: #fff;
+}
+
+#job-level {
+    position: absolute;
+    width: 3.5vw;
+    height: 1vw;
+    line-height: 1.1vw;
+    border-radius: 0.3vw;
+    top: 7.25vw;
+    left: 19.5vw;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.6vw;
+    color: rgb(0, 0, 0);
+    background: #F3E34F;
+}
+
+#job-players {
+    position: absolute;
+    width: 5vw;
+    height: 1vw;
+    line-height: 1.1vw;
+    border-radius: 0.3vw;
+    top: 7.25vw;
+    left: 23.5vw;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.6vw;
+    color: rgb(0, 0, 0);
+    background: #F3E34F;
+}
+
+#job-hours {
+    position: absolute;
+    width: 2.5vw;
+    height: 1vw;
+    line-height: 1.1vw;
+    border-radius: 0.3vw;
+    top: 7.25vw;
+    left: 28.9vw;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.6vw;
+    color: rgb(0, 0, 0);
+    background: #F3E34F;
+}
+
+#job-description {
+    position: absolute;
+    width: 17vw;
+    height: 6vw;
+    top: 9vw;
+    left: 14vw;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.6vw;
+    letter-spacing: 0.05vw;
+    color: #ffffff6a;
+}
+
+#start-job {
+    position: absolute;
+    width: 10vw;
+    height: 3vw;
+    left: 14vw;
+    top: 16.5vw;
+    border: none;
+    outline: none;
+    background: #FFF175;
+    box-shadow: 0px 4px 51px rgba(255, 241, 117, 0.25);
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.6vw;
+    color: #000000;
+}
+
+#go-back {
+    position: absolute;
+    width: 6.55vw;
+    height: 3vw;
+    left: 24.5vw;
+    top: 16.5vw;
+    border: none;
+    outline: none;
+    background: #FF7575;
+    box-shadow: 0px 4px 51px rgba(255, 117, 117, 0.25);
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.6vw;
+    color: #000000;
+}
+
+.sub-images {
+    position: absolute;
+    left: 3vw;
+    top: 21vw;
+    width: 30vw;
+    height: 0vw;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: rgb(59, 59, 59);
+}
+
+.sub-image {
+    position: relative;
+    margin-left: 0.5vw;
+    margin-bottom: 0.5vw;
+    float: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 0vw;
+    left: 0vw;
+    width: 14vw;
+	transition: all 0.5s ease-in-out;
+}
+
+.sub-image:hover {
+	box-sizing: border-box;
+    transform: scale(1.2);
+	border: 2px solid #4a4a50;
+	border-radius: 9px;
+}
+
+
+.job-confirm {
+    position: absolute;
+    left: 2vw;
+    top: -4vw;
+    display: none;
+}
+
+.text-1 {
+    position: absolute;
+    left: 11vw;
+    top: 13vw;
+    text-align: center;
+    width: 20vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.06vw;
+    font-size: 0.8vw;
+    color: #ffffff;
+}
+
+.text-2 {
+    position: absolute;
+    left: 11vw;
+    top: 14.5vw;
+    text-align: center;
+    width: 20vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.06vw;
+    font-size: 0.6vw;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#confirm {
+    position: absolute;
+    width: 6.55vw;
+    height: 3vw;
+    left: 14vw;
+    top: 16.5vw;
+    border: none;
+    outline: none;
+    background: #75FFAC;
+    box-shadow: 0px 4px 51px rgba(255, 117, 117, 0.25);
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.6vw;
+    color: #000000;
+    transition: all 1s;
+}
+
+#confirm:hover {
+    filter: drop-shadow(0 0 1.5vw #75FFAC);
+}
+
+#cancel {
+    position: absolute;
+    width: 6.55vw;
+    height: 3vw;
+    left: 21vw;
+    top: 16.5vw;
+    border: none;
+    outline: none;
+    background: #FF7575;
+    box-shadow: 0px 4px 51px rgba(255, 117, 117, 0.25);
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.6vw;
+    color: #000000;
+    transition: all 1s;
+}
+
+#cancel:hover {
+    filter: drop-shadow(0 0 1.5vw #FF7575);
+}
